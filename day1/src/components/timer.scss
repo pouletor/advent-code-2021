@@ -42,6 +42,10 @@
       0% 100%
     );
     background-color: var(--redColor);
+
+    [data-timer="finished"] & {
+      background-color: var(--greenColor);
+    }
   }
 
   &__effect {
@@ -69,16 +73,42 @@
   text-shadow: 5px 3px 2px rgb(213 216 225 / 25%);
 }
 
+.timer__input {
+  font-size: 19.6rem;
+  font-family: var(--fontBebasNeue);
+  color: var(--lightColor);
+  background-color: transparent;
+  border: none;
+  width: 16rem;
+  text-shadow: 5px 3px 2px rgb(213 216 225 / 25%);
+  text-align: right;
+
+  &:first-child {
+    text-align: right;
+  }
+}
+
+[data-minutes],
+[data-seconds] {
+  [data-timer="finished"] &,
+  [data-timer="editable"] & {
+    border-bottom: 1px dotted;
+  }
+}
+
 .timer__button {
   position: relative;
   height: 40px;
   background-color: transparent;
   border: none;
-  color: var(--lightColor);
-  font-family: var(--fontBebasNeue);
+}
+
+.timer__button--action {
   font-size: 1.6rem;
   margin-top: 1rem;
   letter-spacing: 0.6rem;
+  color: var(--lightColor);
+  font-family: var(--fontBebasNeue);
 
   &:hover {
     font-size: 1.7rem;
@@ -87,36 +117,39 @@
   &:active {
     font-size: 1.6rem;
   }
+
+  [data-timer="finished"] & {
+    visibility: hidden;
+  }
+}
+
+.timer__button--settings {
+  &:hover svg {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  &:active svg {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
 }
 
 .timer__settings__icon {
   position: relative;
   margin-top: 2rem;
+}
 
-  [data-svg-check] {
+[data-svg-gear] {
+  [data-timer="finished"] & {
     display: none;
   }
 }
 
-[data-timer="success"] {
-  .timer__wrapper__circle {
-    background-color: var(--greenColor);
-  }
+[data-svg-check] {
+  display: none;
 
-  [data-minutes],
-  [data-seconds] {
-    border-bottom: 1px dotted;
-  }
-
-  .timer__button {
-    visibility: hidden;
-  }
-
-  [data-svg-gear] {
-    display: none;
-  }
-
-  [data-svg-check] {
+  [data-timer="finished"] & {
     display: inline-block;
   }
 }

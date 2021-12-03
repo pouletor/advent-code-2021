@@ -4,10 +4,26 @@
   <div class="timer__wrapper__circle"></div>
   <div class="timer__wrapper__effect"></div>
   <div class="timer">
-    <span data-minutes>15</span>:<span data-seconds>00</span>
+    <input
+      type="number"
+      class="timer__input"
+      data-minutes
+      value="15"
+      disabled
+      min="0"
+      max="60"
+    />:<input
+      type="number"
+      class="timer__input"
+      data-seconds
+      value="00"
+      disabled
+      min="0"
+      max="60"
+    />
   </div>
   <button
-    class="timer__button"
+    class="timer__button timer__button--action"
     type="button"
     data-button
     data-start="Start"
@@ -17,7 +33,15 @@
     Start
   </button>
   <div class="timer__settings__icon">
-    <span data-svg-gear><include src="./src/images/gear.svg"></include></span>
-    <span data-svg-check><include src="./src/images/check.svg"></include></span>
+    <button
+      class="timer__button timer__button--settings"
+      type="button"
+      data-settings="close"
+    >
+      <span data-svg-gear><include src="./src/images/gear.svg"></include></span>
+      <span data-svg-check
+        ><include src="./src/images/check.svg"></include
+      ></span>
+    </button>
   </div>
 </div>
