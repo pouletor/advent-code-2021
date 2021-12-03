@@ -1,0 +1,34 @@
+:root {
+  --bgColor: #2b2a30;
+
+  --darkColor: #000000;
+  --lightColor: #ffffff;
+
+  --redColor: #9d0000;
+  --greenColor: #00aa51;
+
+  --fontMontserrat: "Montserrat", sans-serif;
+  --fontBebasNeue: "Bebas Neue", sans-serif;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebasneue-book-webfont.woff2") format("woff2"),
+    url("../fonts/bebasneue-book-webfont.woff") format("woff");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--fontMontserrat);
+  background-color: var(--bgColor);
+  color: var(--lightColor);
+}
+
+h1,
+h2 {
+  text-align: center;
+}

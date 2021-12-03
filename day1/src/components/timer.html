@@ -1,0 +1,23 @@
+<link href="components/timer.scss" rel="stylesheet" />
+
+<div class="timer__wrapper" data-timer>
+  <div class="timer__wrapper__circle"></div>
+  <div class="timer__wrapper__effect"></div>
+  <div class="timer">
+    <span data-minutes>15</span>:<span data-seconds>00</span>
+  </div>
+  <button
+    class="timer__button"
+    type="button"
+    data-button
+    data-start="Start"
+    data-stop="Stop"
+    data-state="Start"
+  >
+    Start
+  </button>
+  <div class="timer__settings__icon">
+    <span data-svg-gear><include src="./src/images/gear.svg"></include></span>
+    <span data-svg-check><include src="./src/images/check.svg"></include></span>
+  </div>
+</div>

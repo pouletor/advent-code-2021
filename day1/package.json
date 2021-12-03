@@ -1,0 +1,20 @@
+{
+  "name": "advent-code",
+  "version": "1.0.0",
+  "description": "day 1: pomodoro timer",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "src/index.html",
+  "outputFormat": "esmodule",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Emilie",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "^2.0.1",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.2"
+  }
+}
