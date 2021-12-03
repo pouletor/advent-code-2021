@@ -1,5 +1,5 @@
 {
-  "name": "advent-code",
+  "name": "advent-code-day1",
   "version": "1.0.0",
   "description": "day 1: pomodoro timer",
   "browserslist": "> 0.5%, last 2 versions, not dead",
