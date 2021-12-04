@@ -20,6 +20,4 @@ yarn parcel
 
 ## [day 2](/day2)
 
-```
-
-```
+Stack: Preact, styled components

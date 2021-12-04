@@ -3,8 +3,7 @@ import BtmRightIcon from "../../assets/svg/bg__btm-right.js";
 import LeftIcon from "../../assets/svg/bg__left";
 import TopRightIcon from "../../assets/svg/bg__top-right.js";
 
-const ContentPage = () => {
-  const Wrapper = styled.div``;
+const ContentPage = ({ children }) => {
   const BtmRightIconWrapper = styled.div`
     position: absolute;
     top: 100%;
@@ -19,8 +18,18 @@ const ContentPage = () => {
     top: 0;
     right: 0;
   `;
+  const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 700px) {
+      flex-direction: row;
+    }
+  `;
+
   return (
-    <Wrapper>
+    <div>
       <BtmRightIconWrapper>
         <BtmRightIcon />
       </BtmRightIconWrapper>
@@ -30,8 +39,8 @@ const ContentPage = () => {
       <TopRightIconWrapper>
         <TopRightIcon />
       </TopRightIconWrapper>
-      fff
-    </Wrapper>
+      <Wrapper>{children}</Wrapper>
+    </div>
   );
 };
 
