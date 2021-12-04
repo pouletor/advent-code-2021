@@ -12,12 +12,6 @@ I'm working on the CSS part then the JS part (without looking at the JS raw file
 
 Stack: vanilla JS, scss, parcel
 
-```
-yarn install
-
-yarn parcel
-```
-
 ## [day 2](/day2)
 
 Stack: Preact, styled components
