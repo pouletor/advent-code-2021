@@ -1,0 +1,16 @@
+.piano {
+  width: 100%;
+  display: flex;
+  padding: 0 2rem;
+}
+
+.piano svg {
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .piano {
+    flex: 1;
+    padding: 0 10rem;
+  }
+}

@@ -1,12 +1,17 @@
-import _ from "lodash";
+import "./style.css";
+import Header from "./Header/Header";
+import Piano from "./Piano/Piano";
 
-function component() {
-  const element = document.createElement("div");
+async function getComponent() {
+  const wrapper = document.createElement("div");
+  wrapper.id = "app";
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(["Hello", "webpack"], " ");
+  wrapper.appendChild(Header());
+  wrapper.appendChild(Piano());
 
-  return element;
+  return wrapper;
 }
 
-document.body.appendChild(component());
+getComponent().then((component) => {
+  document.body.appendChild(component);
+});

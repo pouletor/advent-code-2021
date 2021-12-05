@@ -1,0 +1,53 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: var(--bgColor);
+  color: var(--blackColor);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  --bgColor: #37b2c3;
+  --whiteColor: #ffffff;
+  --whiteHoverColor: #ffd200;
+  --blackColor: #000000;
+  --blackHoverColor: #f40082;
+
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+img {
+  max-width: 100%;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.white-keys {
+  fill: var(--whiteColor);
+}
+
+.white-keys:hover {
+  fill: var(--whiteHoverColor);
+}
+
+.black-keys {
+  fill: var(--blackColor);
+}
+
+.black-keys:hover {
+  fill: var(--blackHoverColor);
+}
