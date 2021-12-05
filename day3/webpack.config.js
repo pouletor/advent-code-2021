@@ -8,7 +8,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Output Management",
+      title: "Advent code: day 3",
+      favicon: "./src/assets/favicon.ico",
     }),
   ],
   devtool: "inline-source-map",

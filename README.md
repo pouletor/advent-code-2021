@@ -22,7 +22,7 @@ State: CSS finished / JS wip
 
 ## [day 3](/day3)
 
-Stack:
+Stack: Webpack, modules css, vanilla JS
 
 State:
 

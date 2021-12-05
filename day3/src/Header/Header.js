@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 
 function Header() {
-  const wrapper = document.createElement("div");
+  const wrapper = document.createElement("header");
   const title = document.createElement("h1");
   const subtitle = document.createElement("h2");
 
