@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Eggs and bacon",
+    "price": 4.5,
+    "currency": "$",
+    "availability": 4,
+    "imgUrl": "../../assets/products/plate__bacon-eggs.png"
+  },
+  {
+    "title": "Chicken with salad",
+    "price": 4.5,
+    "currency": "$",
+    "availability": 4,
+    "imgUrl": "../../assets/products/plate__chicken-salad.png"
+  },
+  {
+    "title": "Fish sticks with French Fries",
+    "price": 4.5,
+    "currency": "$",
+    "availability": 4,
+    "imgUrl": "../../assets/products/plate__fish-sticks-fries.png"
+  },
+  {
+    "title": "French Fries with Ketchup",
+    "price": 4.5,
+    "currency": "$",
+    "availability": 4,
+    "imgUrl": "../../assets/products/plate__french-fries.png"
+  },
+  {
+    "title": "Raviolis",
+    "price": 4,
+    "currency": "$",
+    "availability": 4,
+    "imgUrl": "../../assets/products/plate__ravioli.png"
+  }
+]

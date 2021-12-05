@@ -1,47 +1,41 @@
 import styled from "styled-components";
-import BtmRightIcon from "../../assets/svg/bg__btm-right.js";
-import LeftIcon from "../../assets/svg/bg__left";
-import TopRightIcon from "../../assets/svg/bg__top-right.js";
+import BtmRightIcon from "../../assets/svg/bg__btm-right.svg";
+import LeftIcon from "../../assets/svg/bg__left.svg";
+import TopRightIcon from "../../assets/svg/bg__top-right.svg";
 
-const ContentPage = ({ children }) => {
-  const BtmRightIconWrapper = styled.div`
-    position: absolute;
-    top: 100%;
-    right: 0;
-  `;
-  const LeftIconWrapper = styled.div`
-    position: absolute;
-    left: 0;
-  `;
-  const TopRightIconWrapper = styled.div`
-    position: absolute;
-    top: 0;
-    right: 0;
-  `;
-  const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+const BtmRightIconComponent = styled(BtmRightIcon)`
+  position: absolute;
+  top: 100%;
+  right: 0;
+`;
+const LeftIconComponent = styled(LeftIcon)`
+  position: absolute;
+  left: 0;
+`;
+const TopRightIconComponent = styled(TopRightIcon)`
+  position: absolute;
+  top: 0;
+  right: 0;
+`;
 
-    @media (min-width: 700px) {
-      flex-direction: row;
-    }
-  `;
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 
-  return (
-    <div>
-      <BtmRightIconWrapper>
-        <BtmRightIcon />
-      </BtmRightIconWrapper>
-      <LeftIconWrapper>
-        <LeftIcon />
-      </LeftIconWrapper>
-      <TopRightIconWrapper>
-        <TopRightIcon />
-      </TopRightIconWrapper>
-      <Wrapper>{children}</Wrapper>
-    </div>
-  );
-};
+  @media (min-width: 700px) {
+    flex-direction: row;
+  }
+`;
+
+const ContentPage = ({ children }) => (
+  <div>
+    <BtmRightIconComponent />
+    <LeftIconComponent />
+    <TopRightIconComponent />
+    <Wrapper>{children}</Wrapper>
+  </div>
+);
 
 export default ContentPage;

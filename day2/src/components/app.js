@@ -2,8 +2,7 @@ import { createGlobalStyle, StyleSheetManager } from "styled-components";
 
 import Header from "./header";
 import ContentPage from "./contentPage";
-import Card from "./card";
-import Menu from "./menu";
+import MainPage from "./mainPage";
 
 const GlobalStyle = createGlobalStyle`
 	html,
@@ -33,6 +32,11 @@ const GlobalStyle = createGlobalStyle`
 		--whiteColor: #ffffff;
 		--blackColor: #000000;
 
+		--blueProductColor: rgb(122, 179, 243, 0.2);
+		--pinkProductColor: rgb(233, 121, 178, 0.2);
+		--purpleProductColor: rgb(215, 215, 249, 0.2);
+		--greenProductColor: rgb(120, 247, 187, 0.2);
+
 		font-size: 62.5%;
 	};
 	body {
@@ -44,6 +48,9 @@ const GlobalStyle = createGlobalStyle`
 	h1 {
 		margin-bottom: 0;
 	}
+	img {
+		max-width: 100%;
+	};
 `;
 
 const App = () => (
@@ -52,12 +59,7 @@ const App = () => (
       <GlobalStyle />
       <Header />
       <ContentPage>
-        <Card title="To Go Menu">
-          <Menu />
-        </Card>
-        <Card title="Your Cart">
-          <div>YOo</div>
-        </Card>
+        <MainPage />
       </ContentPage>
     </div>
   </StyleSheetManager>
