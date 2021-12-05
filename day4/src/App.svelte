@@ -1,8 +1,9 @@
 <script>
+	import Header from "./Header/Header.svelte";
+	import Keyboard from "./Keyboard/Keyboard.svelte";
+
 	export let day;
 </script>
 
-<header>
-	<h1>Advent code: {day}</h1>
-	<h2>Computer keyboard</h2>
-</header>
+<Header day={day} />
+<Keyboard />
