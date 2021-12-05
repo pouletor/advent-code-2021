@@ -12,6 +12,22 @@ I'm working on the CSS part then the JS part (without looking at the JS raw file
 
 Stack: vanilla JS, scss, parcel
 
+State: CSS finished / JS finished
+
 ## [day 2](/day2)
 
 Stack: Preact, styled components
+
+State: CSS finished / JS wip
+
+## [day 3](/day3)
+
+Stack:
+
+State:
+
+## [day 4](/day4)
+
+Stack:
+
+State:
