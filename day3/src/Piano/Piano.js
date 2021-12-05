@@ -16,8 +16,8 @@ function Piano() {
     key.classList.add(styles["black-keys"]);
   });
 
-  const handleToggleClass = (element) => () => {
-    element.classList.toggle(styles["piano__key--clicked"]);
+  const handleAddClass = (element) => () => {
+    element.classList.add(styles["piano__key--clicked"]);
   };
 
   const handleRemoveClass = (element) => () => {
@@ -26,7 +26,7 @@ function Piano() {
 
   const handleEnterPress = (element) => (event) => {
     if (event.key === "Enter") {
-      handleToggleClass(element)();
+      handleAddClass(element)();
     } else {
       // prevent bug when smashing Enter and Tab simutaneously
       handleRemoveClass(element)();
@@ -35,8 +35,8 @@ function Piano() {
 
   const keys = wrapper.querySelectorAll("path");
   keys.forEach((key) => {
-    key.addEventListener("mousedown", handleToggleClass(key));
-    key.addEventListener("mouseup", handleToggleClass(key));
+    key.addEventListener("mousedown", handleAddClass(key));
+    key.addEventListener("mouseup", handleRemoveClass(key));
     key.addEventListener("keydown", handleEnterPress(key));
     key.addEventListener("keyup", handleEnterPress(key));
   });
