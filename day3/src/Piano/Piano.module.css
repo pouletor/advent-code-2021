@@ -8,6 +8,28 @@
   width: 100%;
 }
 
+.white-keys {
+  fill: var(--whiteColor);
+}
+
+.white-keys:hover,
+.white-keys.piano__key--clicked {
+  fill: var(--whiteHoverColor);
+}
+
+.black-keys {
+  fill: var(--blackColor);
+}
+
+.black-keys:hover,
+.black-keys.piano__key--clicked {
+  fill: var(--blackHoverColor);
+}
+
+.piano__key--clicked {
+  opacity: 0.9;
+}
+
 @media (min-width: 769px) {
   .piano {
     flex: 1;
