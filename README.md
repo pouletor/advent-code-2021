@@ -24,10 +24,10 @@ State: CSS finished / JS wip
 
 Stack: Webpack, modules css, vanilla JS
 
-State:
+State: CSS finished / JS finished
 
 ## [day 4](/day4)
 
-Stack:
+Stack: svelte
 
 State:
